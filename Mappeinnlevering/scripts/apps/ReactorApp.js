@@ -114,6 +114,7 @@ const ReactorApp = {
                 .on('click', function () {
                     /*Skriver hva knappen gjør*/
                     RA.coolDown()
+                    RA.arrowShakingV()
                 })
 
             let btn2 = $('<button>')
@@ -135,8 +136,8 @@ const ReactorApp = {
                 })
                 .on('click', function () {
                     /*Skriver hva knappen gjør*/
-                    RA.arrowShaking()
-                    RA.rotatePump()
+                    RA.arrowShakingH()
+                    RA.rotatePumpH()
 
                 })
             div.append(btn1, btn2)
@@ -145,7 +146,7 @@ const ReactorApp = {
         }() /*end init*/
         return RA.wrapper
     },
-    arrowShaking() {
+    arrowShakingH() {
         console.log("HI")
         $("#Atomreaktor").css("position", "static")
 
@@ -155,14 +156,29 @@ const ReactorApp = {
             $("#3pilerRød, #4pilerRød, #4pilerBlå").animate({
                 transform: "translate(-2 -2)"
             }, 200)
-            ReactorApp.arrowShaking()
+            ReactorApp.arrowShakingH()
         })
     },
-    rotatePump() {
+
+    arrowShakingV() {
+        console.log("HI")
+        $("#Atomreaktor").css("position, static")
+
+        $("#3pilerV, #4pilerV, #4pilerRødV").animate({
+            transform: "translate(2 2)"
+        }, 200, function() {
+            $("#3pilerV, #4pilerV, #4pilerRødV").animate({
+                transform: "translate(-2 -2)"
+            }, 200)
+            ReactorApp.arrowShakingV()
+        })
+    },
+
+    rotatePumpH() {
         $("#VifteH").animate({
-        transform: "translate(-25%, -25%), rotate(360deg)"
+        transform: "rotateX(360deg) rotateY(180)"
         }, 500, function () {
-            ReactorApp.rotatePump()
+            ReactorApp.rotatePumpH()
         })
     },
 

@@ -160,11 +160,19 @@ const ReactorApp = {
     },
     rotatePump() {
         $("#VifteH").animate({
+<<<<<<< HEAD
         transform: "translate(-25%, -25%), rotate(360deg)"
         }, 500, function () {
             ReactorApp.rotatePump()
         })
 },
+=======
+        //transform: "translate(-25%, -25%), rotate(360deg)" 
+        }, 500, function () {
+            ReactorApp.rotatePump()
+        })
+    },
+>>>>>>> dc2f2950171e733f5a267172c8d9feae330b2e30
 
     
     coolDown() {

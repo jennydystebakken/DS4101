@@ -30,3 +30,13 @@ p {
     width: 200px;
     height: 20px;
 }
+
+#vifteH {
+    transform: translate(-25%, -25%) rotate(360deg);
+    animation: rotervifte 5s infinite;
+}
+
+@keyframes rotervifte {
+    0%: {};
+    100%: {};
+}

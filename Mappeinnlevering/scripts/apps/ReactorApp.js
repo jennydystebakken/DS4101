@@ -82,17 +82,10 @@ const ReactorApp = {
                     width: "500px"
                 })
 
-            /*Slider*/
-            $("#slider")
-                .css({
-                    height: "15px",
-                    width: "200px",
-                    backgroundColor: "gradient(red, blue)"
-                })
+
 
             let div = $('<div class="MyClass">')
 
-            let slider = $('<div id="slider">')
 
 
             let btn1 = $('<button>')
@@ -138,6 +131,7 @@ const ReactorApp = {
                 })
                 .on('click', function () {
                     /*Skriver hva knappen gjør*/
+                    RA.coolDown()
                     RA.arrowShakingHSlow()
                     RA.arrowShakingHFast()
                     RA.rotatePumpH()
@@ -145,7 +139,7 @@ const ReactorApp = {
                 })
             div.append(btn1, btn2)
 
-            RA.wrapper.append(div, slider)
+            RA.wrapper.append(div)
         }() /*end init*/
         return RA.wrapper
     },
@@ -216,20 +210,41 @@ const ReactorApp = {
 
     
     coolDown() {
-        console.log("SLIDER")
         $("#slider").slider({
             min: 50,
-            max: 200,
+            max: 1000,
             orientation: "horizontal",
-            step: 10,
-            values: [150],
+            step: 100,
+            values: [1000],
             slide: function (event, ui) {
-                console.log(ui.value);
-                console.log(ui.values[0]);
+
+                //setBoxSize(ui.value);
             }
         }, function () {
             ReactorApp.coolDown()
+            ReactorApp.setBoxSize()
         })
-    } 
+    },
+
+    setBoxSize(position){
+        $("#cooler")
+            .css(
+                {
+                    transform: "translateX(position)"
+                }, function() {
+                    ReactorApp.setBoxSize()
+            })
+    },
+   
+/*Koble markøren til funksjonen setBoxSize, og parameteret position skal endre på verdien translate X (startpunkt i SVG: 594, første verdien).*/ 
+
+    /*let box = $("#marker")
+        .css(
+            {
+                width: 50,
+                height: 50,
+                backgroundColor: "rgb(100, 100, 100)"
+            }
+        );*/
 
 }

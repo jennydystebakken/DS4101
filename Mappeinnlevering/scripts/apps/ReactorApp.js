@@ -115,7 +115,8 @@ const ReactorApp = {
                 .on('click', function () {
                     /*Skriver hva knappen gjør*/
                     RA.coolDown()
-                    RA.arrowShakingV()
+                    RA.ArrowShakingVFast()
+                    RA.arrowShakingVSlow()
                 })
 
             let btn2 = $('<button>')
@@ -137,7 +138,8 @@ const ReactorApp = {
                 })
                 .on('click', function () {
                     /*Skriver hva knappen gjør*/
-                    RA.arrowShakingH()
+                    RA.arrowShakingHSlow()
+                    RA.arrowShakingHFast()
                     RA.rotatePumpH()
 
                 })
@@ -147,31 +149,60 @@ const ReactorApp = {
         }() /*end init*/
         return RA.wrapper
     },
-    arrowShakingH() {
+    arrowShakingHSlow() {
         console.log("HI")
         $("#Atomreaktor").css("position", "static")
 
-        $("#3pilerRød, #4pilerRød, #4pilerBlå").animate({
+        $("#3pilerRød, #4pilerBlå").animate({
             transform: "translate(2 2)"
         }, 200, function () {
-            $("#3pilerRød, #4pilerRød, #4pilerBlå").animate({
+            $("#3pilerRød, #4pilerBlå").animate({
                 transform: "translate(-2 -2)"
             }, 200)
-            ReactorApp.arrowShakingH()
+            ReactorApp.arrowShakingHSlow()
         })
     },
 
-    arrowShakingV() {
+    arrowShakingHFast() {
+        console.log("HI")
+        $("#4pilerRød").css("position", "static")
+
+        $("#4pilerRød").animate({
+            transform: "translate(2 2)",
+            transorm: "translateY(5)"
+        }, 100, function(){
+            $("#4pilerRød").animate({
+                transform: "translate(-2 -2)"
+            }, 100)
+            ReactorApp.arrowShakingHFast()
+        })
+    },
+
+    arrowShakingVSlow() {
         console.log("HI")
         $("#Atomreaktor").css("position, static")
 
-        $("#3pilerV, #4pilerV, #4pilerRødV").animate({
+        $("#3pilerV, #4pilerV").animate({
             transform: "translate(2 2)"
         }, 200, function() {
-            $("#3pilerV, #4pilerV, #4pilerRødV").animate({
+            $("#3pilerV, #4pilerV").animate({
                 transform: "translate(-2 -2)"
             }, 200)
-            ReactorApp.arrowShakingV()
+            ReactorApp.arrowShakingVSlow()
+        })
+    },
+
+    ArrowShakingVFast() {
+        console.log("HI")
+        $("#Atomreaktor").css("position", "static")
+
+        $("#4pilerRødV").animate({
+            transform: "translate(2 2)"
+        }, 70, function(){
+            $("#4pilerRødV").animate({
+                transform: "translate(-2 -2)"
+            }, 90)
+            ReactorApp.ArrowShakingVFast()
         })
     },
 

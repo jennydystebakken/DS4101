@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="678px" height="287px" viewBox="0 0 678 287" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Kjølned</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="16.7347222%" y1="64.0430093%" x2="93.3477501%" y2="64.0430093%" id="linearGradient-1">
+            <stop stop-color="#0080FF" offset="0%"></stop>
+            <stop stop-color="#FF8C64" offset="46.6496628%"></stop>
+            <stop stop-color="#DC4B00" offset="100%"></stop>
+        </linearGradient>
+        <path d="M91.1801973,160 L604,160 C614.49341,160 623,168.50659 623,179 C623,189.49341 614.49341,198 604,198 L90.2847332,198 C85.0854679,203.539618 77.6968417,207 69.5,207 C53.7598846,207 41,194.240115 41,178.5 C41,162.759885 53.7598846,150 69.5,150 C78.1795372,150 85.9528678,153.879932 91.1801973,160 Z" id="path-2"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Kjølned">
+            <rect id="Bakgrunn" fill="#EAEAEA" x="0" y="0" width="678" height="287"></rect>
+            <g id="100" transform="translate(91.000000, 112.000000)">
+                <path d="M23.5,26.5 L23.5,107.524688" id="Line" stroke="#000000" stroke-width="3" stroke-linecap="square"></path>
+                <text font-family="GTWalsheimRegular, GT Walsheim" font-size="18" font-weight="normal" fill="#413746">
+                    <tspan x="8.973" y="19">100</tspan>
+                </text>
+                <text font-family="GTWalsheimRegular, GT Walsheim" font-size="18" font-weight="normal" fill="#413746">
+                    <tspan x="8.973" y="128">100</tspan>
+                </text>
+            </g>
+            <g id="200" transform="translate(144.000000, 112.000000)">
+                <path d="M23.5,26.5 L23.5,107.524688" id="Line" stroke="#000000" stroke-width="3" stroke-linecap="square"></path>
+                <text font-family="GTWalsheimRegular, GT Walsheim" font-size="18" font-weight="normal" fill="#413746">
+                    <tspan x="7.335" y="19">200</tspan>
+                </text>
+                <text font-family="GTWalsheimRegular, GT Walsheim" font-size="18" font-weight="normal" fill="#413746">
+                    <tspan x="7.335" y="128">200</tspan>
+                </text>
+            </g>
+            <g id="300" transform="translate(197.000000, 112.000000)">
+                <path d="M23.5,26.5 L23.5,107.524688" id="Line" stroke="#000000" stroke-width="3" stroke-linecap="square"></path>
+                <text font-family="GTWalsheimRegular, GT Walsheim" font-size="18" font-weight="normal" fill="#413746">
+                    <tspan x="7.047" y="19">300</tspan>
+                </text>
+                <text font-family="GTWalsheimRegular, GT Walsheim" font-size="18" font-weight="normal" fill="#413746">
+                    <tspan x="7.047" y="128">300</tspan>
+                </text>
+            </g>
+            <g id="400" transform="translate(250.000000, 112.000000)">
+                <path d="M23.5,26.5 L23.5,107.524688" id="Line" stroke="#000000" stroke-width="3" stroke-linecap="square"></path>
+                <text font-family="GTWalsheimRegular, GT Walsheim" font-size="18" font-weight="normal" fill="#413746">
+                    <tspan x="7.11" y="19">400</tspan>
+                </text>
+                <text font-family="GTWalsheimRegular, GT Walsheim" font-size="18" font-weight="normal" fill="#413746">
+                    <tspan x="7.11" y="128">400</tspan>
+                </text>
+            </g>
+            <g id="500" transform="translate(303.000000, 112.000000)">
+                <path d="M23.5,26.5 L23.5,107.524688" id="Line" stroke="#000000" stroke-width="3" stroke-linecap="square"></path>
+                <text font-family="GTWalsheimRegular, GT Walsheim" font-size="18" font-weight="normal" fill="#413746">
+                    <tspan x="6.696" y="19">500</tspan>
+                </text>
+                <text font-family="GTWalsheimRegular, GT Walsheim" font-size="18" font-weight="normal" fill="#413746">
+                    <tspan x="6.696" y="128">500</tspan>
+                </text>
+            </g>
+            <g id="600" transform="translate(356.000000, 112.000000)">
+                <path d="M23.5,26.5 L23.5,107.524688" id="Line" stroke="#000000" stroke-width="3" stroke-linecap="square"></path>
+                <text font-family="GTWalsheimRegular, GT Walsheim" font-size="18" font-weight="normal" fill="#413746">
+                    <tspan x="7.074" y="19">600</tspan>
+                </text>
+                <text font-family="GTWalsheimRegular, GT Walsheim" font-size="18" font-weight="normal" fill="#413746">
+                    <tspan x="7.074" y="128">600</tspan>
+                </text>
+            </g>
+            <g id="700" transform="translate(409.000000, 112.000000)">
+                <path d="M23.5,26.5 L23.5,107.524688" id="Line" stroke="#000000" stroke-width="3" stroke-linecap="square"></path>
+                <text font-family="GTWalsheimRegular, GT Walsheim" font-size="18" font-weight="normal" fill="#413746">
+                    <tspan x="7.875" y="19">700</tspan>
+                </text>
+                <text font-family="GTWalsheimRegular, GT Walsheim" font-size="18" font-weight="normal" fill="#413746">
+                    <tspan x="7.875" y="128">700</tspan>
+                </text>
+            </g>
+            <g id="800" transform="translate(462.000000, 112.000000)">
+                <path d="M23.5,26.5 L23.5,107.524688" id="Line" stroke="#000000" stroke-width="3" stroke-linecap="square"></path>
+                <text font-family="GTWalsheimRegular, GT Walsheim" font-size="18" font-weight="normal" fill="#413746">
+                    <tspan x="6.858" y="19">800</tspan>
+                </text>
+                <text font-family="GTWalsheimRegular, GT Walsheim" font-size="18" font-weight="normal" fill="#413746">
+                    <tspan x="6.858" y="128">800</tspan>
+                </text>
+            </g>
+            <g id="900" transform="translate(515.000000, 112.000000)">
+                <path d="M23.5,26.5 L23.5,107.524688" id="Line" stroke="#000000" stroke-width="3" stroke-linecap="square"></path>
+                <text font-family="GTWalsheimRegular, GT Walsheim" font-size="18" font-weight="normal" fill="#413746">
+                    <tspan x="7.074" y="19">900</tspan>
+                </text>
+                <text font-family="GTWalsheimRegular, GT Walsheim" font-size="18" font-weight="normal" fill="#413746">
+                    <tspan x="7.074" y="128">900</tspan>
+                </text>
+            </g>
+            <g id="1000" transform="translate(568.000000, 112.000000)">
+                <path d="M23.5,26.5 L23.5,107.524688" id="Line" stroke="#000000" stroke-width="3" stroke-linecap="square"></path>
+                <text font-family="GTWalsheimRegular, GT Walsheim" font-size="18" font-weight="normal" fill="#413746">
+                    <tspan x="3.762" y="19">1000</tspan>
+                </text>
+                <text font-family="GTWalsheimRegular, GT Walsheim" font-size="18" font-weight="normal" fill="#413746">
+                    <tspan x="3.762" y="128">1000</tspan>
+                </text>
+            </g>
+            <g id="Temperatur">
+                <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                <path stroke="#000000" stroke-width="3" d="M604,161.5 L90.4887133,161.5 L90.0396157,160.974204 C84.9393964,155.002954 77.5060488,151.5 69.5,151.5 C54.5883118,151.5 42.5,163.588312 42.5,178.5 C42.5,193.411688 54.5883118,205.5 69.5,205.5 C77.060463,205.5 84.1179032,202.378668 89.1910062,196.973471 L89.6353875,196.5 L604,196.5 C613.664983,196.5 621.5,188.664983 621.5,179 C621.5,169.335017 613.664983,161.5 604,161.5 Z"></path>
+            </g>
+            <polygon id="Marker" fill="#000000" transform="translate(591.500000, 94.000000) rotate(-180.000000) translate(-591.500000, -94.000000) " points="591.5 83 602 105 581 105"></polygon>
+            <text id="Tittel" font-family="GTWalsheimRegular, GT Walsheim" font-size="30" font-weight="normal" fill="#413746">
+                <tspan x="148.21" y="53">Kjøl ned reaktor RBMK-1000</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

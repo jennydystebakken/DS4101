@@ -167,10 +167,10 @@ const ReactorApp = {
         console.log("HI")
         $("#4pilerRød").css("position", "static")
 
-        $("#4pilerRød", "#4pilerBlå").animate({
+        $("#4pilerRød, #4pilerBlå").animate({
             transform: "translateY(5px)"
         }, 100, function(){
-            $("#4pilerRød", "#4pilerBlå").animate({
+            $("#4pilerRød, #4pilerBlå").animate({
                 transform: "translateY(-5px)"
             }, 100)
             ReactorApp.arrowShakingHFast()
@@ -181,10 +181,10 @@ const ReactorApp = {
         console.log("HI")
         $("#Atomreaktor").css("position, static")
 
-        $("#3pilerV, #4pilerV").animate({
+        $("#3pilerV").animate({
             transform: "translate(2 2)"
         }, 200, function() {
-            $("#3pilerV, #4pilerV").animate({
+            $("#3pilerV").animate({
                 transform: "translate(-2 -2)"
             }, 200)
             ReactorApp.arrowShakingVSlow()
@@ -195,10 +195,10 @@ const ReactorApp = {
         console.log("HI")
         $("#Atomreaktor").css("position", "static")
 
-        $("#4pilerRødV").animate({
+        $("#4pilerRødV, #4pilerV").animate({
             transform: "translateY(5px)"
         }, 70, function(){
-            $("#4pilerRødV").animate({
+            $("#4pilerRødV, #4pilerV").animate({
                 transform: "translateY(-5px)"
             }, 90)
             ReactorApp.ArrowShakingVFast()

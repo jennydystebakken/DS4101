@@ -160,10 +160,11 @@ const ReactorApp = {
     },
     rotatePump() {
         $("#VifteH").animate({
-        transform: "translate(-25%, -25%), rotate(360deg)"
+        //transform: "translate(-25%, -25%), rotate(360deg)" 
         }, 500, function () {
             ReactorApp.rotatePump()
         })
+        
     },
 
     

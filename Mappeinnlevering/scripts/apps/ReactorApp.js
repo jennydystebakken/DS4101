@@ -158,13 +158,13 @@ const ReactorApp = {
             ReactorApp.arrowShaking()
         })
     },
-    rotatePump() {
+    /*rotatePump() {
         $("#VifteH").animate({
-            transform: "rotate(360deg)"
+        transform: "rotate(360deg)"
         }, 500, function () {
             ReactorApp.rotatePump()
         })
-    },
+},*/
 
     
     coolDown() {

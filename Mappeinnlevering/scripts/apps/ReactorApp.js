@@ -208,7 +208,8 @@ const ReactorApp = {
 
     rotatePumpH() {
         $("#VifteH").animate({
-        transform: "rotateX(360deg) rotateY(180)"
+        "-webkit-transform":
+        "rotate(360deg)"
         }, 500, function () {
             ReactorApp.rotatePumpH()
         })

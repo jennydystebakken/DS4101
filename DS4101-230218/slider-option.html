@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slider and select</title>
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+</head>
+<body>
+    <!--<select name="" id="color-select">
+        <option value="red">red</option>
+        <option value="blue">blue</option>
+        <option value="orange">orange</option>
+        <option value="yellow">yellow</option>
+    </select>-->
+    
+    <div id="slider" style="max-width: 400px; margin-bottom: 1rem;"></div>
+   
+    <div id="box" style="background: linear-gradient(to right, blue 10%, red 90%);"></div>
+   
+   <script src="scripts/jquery/jquery-3.3.1.min.js"></script>
+   <script src="scripts/jquery/jquery-ui.min.js"></script>
+   
+   <script>
+        /*$("#color-select").on("change", function(){
+            let colorSelected = $(this).val();
+            $("#box")
+            .css(
+                {
+                    backgroundColor: "linearGradient(toRight, blue 10%, red 90%)"
+                }
+            )
+        });*/
+        
+        $("#slider").slider(
+            {
+                min: 50,
+                max: 400,
+                orientation: "horizontal",
+                step: 10,
+                values: [50],
+                slide: function(event, ui){
+                    console.log(ui.value);
+                    console.log(ui.values[0] + ui.values[1]);
+                    
+                    setBoxSize(ui.value);
+                }
+            }
+        );
+       
+        function setBoxSize(size){
+            $("#box")
+                .css(
+                    {
+                        width: size
+                    }
+            )
+        }
+       
+        let box = $("#box")
+            .css(
+                {
+                    width: 50,
+                    height: 50,
+                    backgroundColor: "rgb(100, 100, 100)"
+                }
+            );
+    </script>
+</body>
+</html>

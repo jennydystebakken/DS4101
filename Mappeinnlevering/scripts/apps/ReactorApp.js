@@ -85,8 +85,9 @@ const ReactorApp = {
             /*Slider*/
             $("#slider")
                 .css({
-                    height: "auto",
-                    width: "200px"
+                    height: "15px",
+                    width: "200px",
+                    backgroundColor: "gradient(red, blue)"
                 })
 
             let div = $('<div class="MyClass">')

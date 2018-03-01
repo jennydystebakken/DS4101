@@ -31,7 +31,7 @@ p {
     height: 20px;
 }
 
-#vifteH {
+/*#vifteH {
     transform: translate(-25%, -25%) rotate(360deg);
     animation: rotervifte 5s infinite;
 }

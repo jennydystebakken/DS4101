@@ -62,9 +62,19 @@ const HeartBook = {
                 HB.hentBilder(BibliotekModule.hentBiografi());
             })
 
-            let
+            let student = $("#student")
+            .on("click", function() {
+                $("#output").empty();
+                HB.hentBilder(BibliotekModule.hentStudent());
+            })
 
-            HB.htmlWrap.append(he, alle, menn, kvinner, biografi, HB.output)
+            let teacher = $("#teacher")
+            .on("click", function() {
+                $("#output").empty();
+                HB.hentBilder(BibliotekModule.hentTeacher());
+            })
+
+            HB.htmlWrap.append(he, alle, menn, kvinner, student, teacher, HB.output)
 
         }()
 

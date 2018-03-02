@@ -56,9 +56,6 @@ const HeartBook = {
                 HB.hentBilder(BibliotekModule.hentMenn());
             })
 
-<<<<<<< HEAD
-            HB.htmlWrap.append(he, alle, menn, kvinner, HB.output)
-=======
             let biografi = $("#beskrivelse")
             .on("click", function () {
                 $("#output").empty();
@@ -66,7 +63,6 @@ const HeartBook = {
             })
 
             HB.htmlWrap.append(he, alle, menn, kvinner, biografi, HB.output)
->>>>>>> origin/master
 
         }()
 

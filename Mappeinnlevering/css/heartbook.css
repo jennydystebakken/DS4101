@@ -1,20 +1,6 @@
 body {
     background-color: #F4E3E5;
-    margin: 0px;
-    padding: 0px;
-    min-height: 100%;
 }
-
-html {
-    height: 100%;
-    box-sizing: border-box;
-  }
-  
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
 
 p {
     font-family: 'Roboto', sans-serif;

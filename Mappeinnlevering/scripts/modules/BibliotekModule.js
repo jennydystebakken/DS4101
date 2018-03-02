@@ -48,21 +48,14 @@ const BibliotekModule = (function () {
             'bildeadresse': 'Zach',
             'alder': '41',
             'biografi': 'Hahaha',
-            'kjonn': 'Kvinne',
-        },
-        {
-            'navn': 'Stian',
-            'bildeadresse': 'Stian',
-            'alder': '43',
-            'biografi': 'Hahaha',
-            'kjonn': 'Kvinne',
+            'kjonn': 'Mann',
         },
         {
             'navn': 'Rolando',
             'bildeadresse': 'Rolando',
             'alder': '43',
             'biografi': 'Hahaha',
-            'kjonn': 'Kvinne',
+            'kjonn': 'Mann',
         }
     ]
 

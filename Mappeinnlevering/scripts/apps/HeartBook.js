@@ -19,33 +19,92 @@ const HeartBook = {
             })
         }()
 
+
         const GUI = function () {
             let he = $("<h3>", {
-                text: "HEARTBOOK"
+            })
 
+            $("button")
+                .addClass("btn");
+
+            $(".btn").css({
+                backgroundColor: "blue"
             })
 
             let alle = $("<button>", {
                 text: "Alle"
-            }).on("click", function () {
+            })
+            .css({
+                marginLeft: "10px",
+                width: "150px",
+                height: "50px",
+                background: "#D88898",
+                borderRadius: "10px",
+                border: "none",
+                fontFamily: "'Roboto', sans-serif",
+                fontSize: "15px",
+                color: "#FFFFFF",
+                boxShadow: "0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)"
+            })
+            .on("click", function () {
                 HB.hentBilder(BibliotekModule.hentAlle());
             })
 
             let kvinner = $("<button>", {
                 text: "Kvinner"
-            }).on("click", function () {
+                })
+                .css({
+                    marginLeft: "10px",
+                    width: "150px",
+                    height: "50px",
+                    background: "#D88898",
+                    borderRadius: "10px",
+                    border: "none",
+                    fontFamily: "'Roboto', sans-serif",
+                    fontSize: "15px",
+                    color: "#FFFFFF",
+                    boxShadow: "0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)"
+                })
+                .on("click", function () {
                 HB.hentBilder(BibliotekModule.hentKvinne());
-            })
+                })
 
             let menn = $("<button>", {
                 text: "Menn"
-            }).on("click", function () {
+            })
+            .css({
+                marginLeft: "10px",
+                width: "150px",
+                height: "50px",
+                background: "#D88898",
+                borderRadius: "10px",
+                border: "none",
+                fontFamily: "'Roboto', sans-serif",
+                fontSize: "15px",
+                color: "#FFFFFF",
+                boxShadow: "0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)"
+            })
+            .on("click", function () {
                 HB.hentBilder(BibliotekModule.hentMenn());
             })
 
             let biografi = $("<button>", {
                 text: "Biografi"
-            }).on("click", function () {
+            })
+            .css({
+                marginLeft: "10px",
+                width: "150px",
+                height: "50px",
+                background: "#D88898",
+                borderRadius: "10px",
+                border: "none",
+                fontFamily: "'Roboto', sans-serif",
+                fontSize: "15px",
+                color: "#FFFFFF",
+                boxShadow: "0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)"
+
+            })
+            .on("click", function () {
                 HB.hentBilder(BibliotekModule.hentBiografi());
             })
 

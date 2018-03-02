@@ -53,12 +53,7 @@ const HeartBook = {
                 HB.hentBilder(BibliotekModule.hentMenn());
             })
 
-            let biografi = $("#beskrivelse")
-            .on("click", function () {
-                HB.hentBilder(BibliotekModule.hentBiografi());
-            })
-
-            HB.htmlWrap.append(he, alle, menn, kvinner, biografi, HB.output)
+            HB.htmlWrap.append(he, alle, menn, kvinner, HB.output)
 
         }()
 

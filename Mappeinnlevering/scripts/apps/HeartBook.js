@@ -22,6 +22,7 @@ const HeartBook = {
         const GUI = function () {
             let he = $("<h3>", {
                 text: "HEARTBOOK"
+
             })
 
             let alle = $("<button>", {
@@ -59,7 +60,7 @@ const HeartBook = {
         
         for (let i = 0; i < person.length; i++) {
             let bilde = $("<img>", {
-                src: "images/profiles/" + person[i].bildeadresse + ".jpg"
+                src: "images/profiles/" + person[i].bildeadresse + ".png"
             })
             .on("click", function (){
                 $(`<p>${person[i].navn}</p>`)

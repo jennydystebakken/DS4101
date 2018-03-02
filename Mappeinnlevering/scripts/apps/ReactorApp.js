@@ -19,6 +19,7 @@ const ReactorApp = {
                     marginBottom: "0px",
                     fontSize: "50px"
                 })
+
             
             $("#undertittel")
                 .css({
@@ -40,6 +41,10 @@ const ReactorApp = {
                     width: "1000px",
                     marginTop: "50px",
                     marginBottom: "50px"
+                })
+           $("#Temperatur") 
+                .css({
+                    fill: "linear-gradient(to right, red , yellow)"
                 })
 
             $("#rect8182, #rect8172, #rect8178")

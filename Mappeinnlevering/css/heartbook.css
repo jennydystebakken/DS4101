@@ -1,0 +1,17 @@
+body {
+    background-color: #F9DCDA;
+}
+
+img {
+    width: auto;
+    height: 300px;
+
+}  
+
+#logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: 350px;
+}

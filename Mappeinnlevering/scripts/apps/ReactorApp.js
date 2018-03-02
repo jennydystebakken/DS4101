@@ -87,6 +87,18 @@ const ReactorApp = {
                     width: "500px"
                 })
 
+            $("#VifteV")
+                .CSSAnimate({
+                    rotate: "360deg"
+                    }, 1000
+                )
+
+            $("#VifteH")
+                .CSSAnimate({
+                    rotate: "360deg"
+                }, 1000
+                )
+
 
 
             let div = $('<div class="MyClass">')
@@ -139,7 +151,7 @@ const ReactorApp = {
                     RA.coolDown()
                     RA.arrowShakingHSlow()
                     RA.arrowShakingHFast()
-                    RA.rotatePumpH()
+                    RA.rotatePumpV()
 
                 })
             div.append(btn1, btn2)
@@ -204,12 +216,11 @@ const ReactorApp = {
         })
     },
 
-    rotatePumpH() {
-        $("#VifteH").animate({
-        "-webkit-transform":
-        "rotate(360deg)"
-        }, 500, function () {
-            ReactorApp.rotatePumpH()
+    rotatePumpV() {
+        $("#VifteV").CSSAnimate({
+            rotate: "360deg"
+        }, 2000, function () {
+            ReactorApp.rotatePumpV()
         })
         
     },

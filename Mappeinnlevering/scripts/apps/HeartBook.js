@@ -3,7 +3,7 @@ const HeartBook = {
     htmlWrap: null,
 
     image: null,
-    
+
     output: null,
 
     filepath: "images/profiles/",
@@ -40,21 +40,25 @@ const HeartBook = {
 
             let alle = $("#alle")
             .on("click", function () {
+                $("#output").empty();
                 HB.hentBilder(BibliotekModule.hentAlle());
             })
 
             let kvinner = $("#kvinner")
                 .on("click", function () {
-                HB.hentBilder(BibliotekModule.hentKvinne());
+                  $("#output").empty();
+                  HB.hentBilder(BibliotekModule.hentKvinne());
                 })
 
             let menn = $("#menn")
             .on("click", function () {
+                $("#output").empty();
                 HB.hentBilder(BibliotekModule.hentMenn());
             })
 
             let biografi = $("#beskrivelse")
             .on("click", function () {
+                $("#output").empty();
                 HB.hentBilder(BibliotekModule.hentBiografi());
             })
 
@@ -66,7 +70,7 @@ const HeartBook = {
     },
     hentBilder(person) {
         let out = $("#output")
-        
+
         for (let i = 0; i < person.length; i++) {
             let bilde = $("<img>", {
                 src: "images/profiles/" + person[i].bildeadresse + ".png"

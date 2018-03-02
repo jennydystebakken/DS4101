@@ -1,9 +1,9 @@
 const BibliotekModule = (function () {
 
 
-    let liste = [{
+    let list = [{
             'navn': 'Andreas Eilertsen Lybo',
-            'bildeadresse': 'Andreas Java',
+            'imagesrc': 'Andreas Java',
             'alder': '22',
             'biografi': 'Vegetarian, the only meat I eat is dick.',
             'kjonn': 'Mann',
@@ -11,7 +11,7 @@ const BibliotekModule = (function () {
         },
         {
             'navn': 'Jenny Mylius Sandmo',
-            'bildeadresse': 'Jenny',
+            'imagesrc': 'Jenny',
             'alder': '21',
             'biografi': 'Det eneste lavere enn standardene mine er saldoen min.',
             'kjonn': 'Kvinne',
@@ -19,7 +19,7 @@ const BibliotekModule = (function () {
         },
         {
             'navn': 'Pär Joona',
-            'bildeadresse': 'Pierre',
+            'imagesrc': 'Pierre',
             'alder': '25',
             'biografi': 'Kan jeg få en veibeskrivelse til hjertet ditt?',
             'kjonn': 'Mann',
@@ -27,7 +27,7 @@ const BibliotekModule = (function () {
         },
         {
             'navn': 'Elisabeth Henriksen',
-            'bildeadresse': 'Beth',
+            'imagesrc': 'Beth',
             'alder': '22',
             'biografi': 'Svømme kan jeg, men i dine øyne drukner jeg..',
             'kjonn': 'Kvinne',
@@ -35,7 +35,7 @@ const BibliotekModule = (function () {
         },
         {
             'navn': 'Simen Johansen',
-            'bildeadresse': 'Simen',
+            'imagesrc': 'Simen',
             'alder': '22',
             'biografi': 'Jeg satser på at dine standarder er mye lavere enn mine.',
             'kjonn': 'Mann',
@@ -43,7 +43,7 @@ const BibliotekModule = (function () {
         },
         {
             'navn': 'Ben Johansen',
-            'bildeadresse': 'Ben',
+            'imagesrc': 'Ben',
             'alder': '20',
             'biografi': 'Im cute, fun and love life! I hate playing head games unless they involve the mouth.',
             'kjonn': 'Mann',
@@ -51,7 +51,7 @@ const BibliotekModule = (function () {
         },
         {
             'navn': 'Zachy Laguda',
-            'bildeadresse': 'Zach',
+            'imagesrc': 'Zach',
             'alder': '22',
             'biografi': 'The asian for any occasion. Msg if you play pokemon.',
             'kjonn': 'Mann',
@@ -59,7 +59,7 @@ const BibliotekModule = (function () {
         },
         {
             'navn': 'Trine Bekkejorden',
-            'bildeadresse': 'Trine',
+            'imagesrc': 'Trine',
             'alder': '24',
             'biografi': 'The only hair between my legs should be your beard.',
             'kjonn': 'Kvinne',
@@ -67,7 +67,7 @@ const BibliotekModule = (function () {
         },
         {
             'navn': 'Hanne Sørum',
-            'bildeadresse': 'Hanne ',
+            'imagesrc': 'Hanne ',
             'alder': '43',
             'biografi': 'I could really make use of a massage, an orgasm, hard apple cider and a check for $300,000',
             'kjonn': 'Kvinne',
@@ -75,7 +75,7 @@ const BibliotekModule = (function () {
         },
         {
             'navn': 'Helene Thorkildsen',
-            'bildeadresse': 'Helene',
+            'imagesrc': 'Helene',
             'alder': '21',
             'biografi': 'Only thing tighter than my asshole is family:-)',
             'kjonn': 'Kvinne',
@@ -83,7 +83,7 @@ const BibliotekModule = (function () {
         },
         {
             'navn': 'Linda Nordåk',
-            'bildeadresse': 'Linda',
+            'imagesrc': 'Linda',
             'alder': '23',
             'biografi': 'Oh youve found out you only live once? Please tell me more about your other scientific discoveries ',
             'kjonn': 'Kvinne',
@@ -123,7 +123,7 @@ const BibliotekModule = (function () {
         },
         {
             'navn': 'Rolando Gonzalez',
-            'bildeadresse': 'Rolando',
+            'imagesrc': 'Rolando',
             'alder': '35',
             'biografi': 'You only live once!',
             'kjonn': 'Mann',
@@ -131,60 +131,60 @@ const BibliotekModule = (function () {
         }
     ]
 
-    function hentAlle() {
-        return liste;
+    function getAll() {
+        return list;
     }
 
-    function hentKvinne() {
+    function getWomen() {
 
         let array = [];
-        for (let i = 0; i < liste.length; i++) {
-            if (liste[i].kjonn === 'Kvinne') {
-                array.push(liste[i]);
+        for (let i = 0; i < list.length; i++) {
+            if (list[i].kjonn === 'Kvinne') {
+                array.push(list[i]);
             }
         }
         return array
     }
 
-    function hentMenn() {
+    function getMen() {
 
         let array = [];
-        for (let i = 0; i < liste.length; i++) {
-            if (liste[i].kjonn === 'Mann') {
-                array.push(liste[i]);
+        for (let i = 0; i < list.length; i++) {
+            if (list[i].kjonn === 'Mann') {
+                array.push(list[i]);
             }
         }
         return array
     }
 
-    function hentStudent() {
+    function getStudent() {
 
         let array = [];
-        for (let i = 0; i < liste.length; i++) {
-            if (liste[i].stilling === 'student') {
-                array.push(liste[i]);
+        for (let i = 0; i < list.length; i++) {
+            if (list[i].stilling === 'student') {
+                array.push(list[i]);
             }
         }
         return array
     }
 
-    function hentTeacher() {
+    function getTeacher() {
 
         let array = [];
-        for (let i = 0; i < liste.length; i++) {
-            if (liste[i].stilling === 'teacher') {
-                array.push(liste[i]);
+        for (let i = 0; i < list.length; i++) {
+            if (list[i].stilling === 'teacher') {
+                array.push(list[i]);
             }
         }
         return array
     }
 
     return {
-        hentKvinne,
-        hentMenn,
-        hentAlle,
-        hentStudent,
-        hentTeacher
+        getAll,
+        getWomen,
+        getMen,
+        getStudent,
+        getTeacher
     }
 
 }())

@@ -1,0 +1,93 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #777887;
+}
+
+/* Header*/
+.header {
+    width: auto;
+    margin: auto;
+    padding-bottom: 2rem;
+}
+
+#main-page-header {
+    background-color: #3E3A47; 
+    padding-top: 10px;
+    position: relative;
+}
+
+#headerbilde {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-top: 20px;
+    
+}
+
+#overskrift {
+    color: white;
+    text-align: center;
+    font-size: 4.5rem; 
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    padding-top: 15px;
+    margin: 0;
+    line-height: 100px;
+}
+
+#undertekst {
+    color: #f4ef7b;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;  
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+/* Button*/ 
+.btn {
+    padding: 0.7rem;
+    border-radius: 3px;
+    margin-right: 10px;
+    float: inherit;
+}
+
+.btn {
+    background-color: #3e3a47;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: white;
+    font-weight: 300;
+    line-height: 10px;
+    width: 300px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #c8c8c8;
+    color: #3e3a47;
+}
+
+/* Table*/
+
+#table-1, #table-2, #table-3{
+    font-family: 'Roboto', sans-serif;
+}
+
+ul, li {
+    padding-bottom: 1rem;
+    width: 300px;
+    color: black;
+    font-weight: 300;
+}
+
+table {
+    margin: auto;
+}
+
+th, td {
+    padding: 1rem;
+}

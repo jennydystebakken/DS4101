@@ -38,57 +38,57 @@ const HeartBook = {
 
             })
 
-            let alle = $("#alle")
+            let all = $("#all")
             .on("click", function () {
                 $("#output").empty();
-                HB.hentBilder(BibliotekModule.hentAlle());
+                HB.getPictures(HeartbookModule.getAll());
             })
 
-            let kvinner = $("#kvinner")
+            let women = $("#women")
                 .on("click", function () {
                   $("#output").empty();
-                  HB.hentBilder(BibliotekModule.hentKvinne());
+                  HB.getPictures(HeartbookModule.getWomen());
                 })
 
-            let menn = $("#menn")
+            let men = $("#men")
             .on("click", function () {
                 $("#output").empty();
-                HB.hentBilder(BibliotekModule.hentMenn());
+                HB.getPictures(HeartbookModule.getMen());
             })
 
-            let biografi = $("#beskrivelse")
+            /*let biografi = $("#beskrivelse")
             .on("click", function () {
                 $("#output").empty();
                 HB.hentBilder(BibliotekModule.hentBiografi());
-            })
+            })*/
 
-            let student = $("#student")
+            let student = $("#students")
             .on("click", function() {
                 $("#output").empty();
-                HB.hentBilder(BibliotekModule.hentStudent());
+                HB.getPictures(HeartbookModule.getStudent());
             })
 
-            let teacher = $("#teacher")
+            let teacher = $("#teachers")
             .on("click", function() {
                 $("#output").empty();
-                HB.hentBilder(BibliotekModule.hentTeacher());
+                HB.getPictures(HeartbookModule.getTeacher());
             })
 
-            HB.htmlWrap.append(he, alle, menn, kvinner, student, teacher, HB.output)
+            HB.htmlWrap.append(he, all, men, women, student, teacher, HB.output)
 
         }()
 
         return HB.htmlWrap
     },
-    hentBilder(person) {
+    getPictures(person) {
         let out = $("#output")
 
         for (let i = 0; i < person.length; i++) {
-            let bilde = $("<img>", {
-                src: "images/profiles/" + person[i].bildeadresse + ".png"
+            let picture = $("<img>", {
+                src: "images/profiles/" + person[i].imagesrc + ".png"
             })
             .on("click", function (){
-                $(`<p>${person[i].navn}</p>`)
+                $(`<p>${person[i].name}</p>`)
             })
             .appendTo(out)
         }

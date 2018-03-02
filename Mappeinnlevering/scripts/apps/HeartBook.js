@@ -24,16 +24,7 @@ const HeartBook = {
             let he = $("<h3>", {
             })
 
-            $("button")
-                .addClass("btn");
-
-            $(".btn").css({
-                backgroundColor: "blue"
-            })
-
-            let alle = $("<button>", {
-                text: "Alle"
-            })
+            let btn = $(".btn")
             .css({
                 marginLeft: "10px",
                 width: "150px",
@@ -46,64 +37,23 @@ const HeartBook = {
                 color: "#FFFFFF",
                 boxShadow: "0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)"
             })
+
+            let alle = $("#alle")
             .on("click", function () {
                 HB.hentBilder(BibliotekModule.hentAlle());
             })
 
-            let kvinner = $("<button>", {
-                text: "Kvinner"
-                })
-                .css({
-                    marginLeft: "10px",
-                    width: "150px",
-                    height: "50px",
-                    background: "#D88898",
-                    borderRadius: "10px",
-                    border: "none",
-                    fontFamily: "'Roboto', sans-serif",
-                    fontSize: "15px",
-                    color: "#FFFFFF",
-                    boxShadow: "0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)"
-                })
+            let kvinner = $("#kvinner")
                 .on("click", function () {
                 HB.hentBilder(BibliotekModule.hentKvinne());
                 })
 
-            let menn = $("<button>", {
-                text: "Menn"
-            })
-            .css({
-                marginLeft: "10px",
-                width: "150px",
-                height: "50px",
-                background: "#D88898",
-                borderRadius: "10px",
-                border: "none",
-                fontFamily: "'Roboto', sans-serif",
-                fontSize: "15px",
-                color: "#FFFFFF",
-                boxShadow: "0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)"
-            })
+            let menn = $("#menn")
             .on("click", function () {
                 HB.hentBilder(BibliotekModule.hentMenn());
             })
 
-            let biografi = $("<button>", {
-                text: "Biografi"
-            })
-            .css({
-                marginLeft: "10px",
-                width: "150px",
-                height: "50px",
-                background: "#D88898",
-                borderRadius: "10px",
-                border: "none",
-                fontFamily: "'Roboto', sans-serif",
-                fontSize: "15px",
-                color: "#FFFFFF",
-                boxShadow: "0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)"
-
-            })
+            let biografi = $("#beskrivelse")
             .on("click", function () {
                 HB.hentBilder(BibliotekModule.hentBiografi());
             })

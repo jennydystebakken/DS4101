@@ -125,20 +125,34 @@ const BibliotekModule = (function () {
         return array
     }
 
-    function hentBiografi(navn) {
+    function hentStudent() {
 
+        let array = [];
         for (let i = 0; i < liste.length; i++) {
-            if (liste[i].biografi === navn) {
-                return liste[i]
+            if (liste[i].stilling === 'student') {
+                array.push(liste[i]);
             }
         }
+        return array
+    }
+
+    function hentTeacher() {
+
+        let array = [];
+        for (let i = 0; i < liste.length; i++) {
+            if (liste[i].stilling === 'teacher') {
+                array.push(liste[i]);
+            }
+        }
+        return array
     }
 
     return {
         hentKvinne,
         hentMenn,
         hentAlle,
-        hentBiografi
+        hentStudent,
+        hentTeacher
     }
 
 }())

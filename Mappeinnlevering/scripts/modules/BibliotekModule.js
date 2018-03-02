@@ -7,6 +7,7 @@ const BibliotekModule = (function () {
             'alder': '67',
             'biografi': 'Hahaha',
             'kjonn': 'Mann',
+            'stilling': 'student',
         },
         {
             'navn': 'Jenny',
@@ -14,6 +15,7 @@ const BibliotekModule = (function () {
             'alder': '30',
             'biografi': 'Hahaha',
             'kjonn': 'Kvinne',
+            'stilling': 'student',
         },
         {
             'navn': 'Pierre',
@@ -21,6 +23,7 @@ const BibliotekModule = (function () {
             'alder': '29',
             'biografi': 'Hahaha',
             'kjonn': 'Mann',
+            'stilling': 'student',
         },
         {
             'navn': 'Beth',
@@ -28,6 +31,7 @@ const BibliotekModule = (function () {
             'alder': '34',
             'biografi': 'Hahaha',
             'kjonn': 'Kvinne',
+            'stilling': 'student',
         },
         {
             'navn': 'Simen',
@@ -35,6 +39,7 @@ const BibliotekModule = (function () {
             'alder': '55',
             'biografi': 'Hahaha',
             'kjonn': 'Mann',
+            'stilling': 'student',
         },
         {
             'navn': 'Ben',
@@ -42,6 +47,7 @@ const BibliotekModule = (function () {
             'alder': '19',
             'biografi': 'Hahaha',
             'kjonn': 'Mann',
+            'stilling': 'student',
         },
         {
             'navn': 'Zach',
@@ -49,6 +55,7 @@ const BibliotekModule = (function () {
             'alder': '41',
             'biografi': 'Hahaha',
             'kjonn': 'Mann',
+            'stilling': 'student',
         },
         {
             'navn': 'Trine',
@@ -56,6 +63,7 @@ const BibliotekModule = (function () {
             'alder': '43',
             'biografi': 'Hahaha',
             'kjonn': 'Kvinne',
+            'stilling': 'student',
         },
         {
             'navn': 'Hanne',
@@ -63,6 +71,7 @@ const BibliotekModule = (function () {
             'alder': '43',
             'biografi': 'Hahaha',
             'kjonn': 'Kvinne',
+            'stilling': 'teacher',
         },
         {
             'navn': 'Helene',
@@ -70,6 +79,7 @@ const BibliotekModule = (function () {
             'alder': '43',
             'biografi': 'Hahaha',
             'kjonn': 'Kvinne',
+            'stilling': 'student',
         },
         {
             'navn': 'Linda',
@@ -77,6 +87,7 @@ const BibliotekModule = (function () {
             'alder': '43',
             'biografi': 'Hahaha',
             'kjonn': 'Kvinne',
+            'stilling': 'student',
         },
         {
             'navn': 'Rolando',
@@ -84,6 +95,7 @@ const BibliotekModule = (function () {
             'alder': '43',
             'biografi': 'Hahaha',
             'kjonn': 'Mann',
+            'stilling': 'teacher',
         }
     ]
 

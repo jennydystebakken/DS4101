@@ -62,6 +62,8 @@ const HeartBook = {
                 HB.hentBilder(BibliotekModule.hentBiografi());
             })
 
+            let
+
             HB.htmlWrap.append(he, alle, menn, kvinner, biografi, HB.output)
 
         }()

@@ -10,6 +10,7 @@ html, body {
 
 main {
     padding-bottom: 95px;
+    text-align: center;
 }
 
 p {
@@ -27,11 +28,9 @@ img {
  }
 
 #btn-div {
-    display: block;
-}
-
-.btn {
-
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
 }
 
 #logo {

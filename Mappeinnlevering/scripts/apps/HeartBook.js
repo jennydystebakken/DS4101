@@ -26,7 +26,7 @@ const HeartBook = {
 
             let btn = $(".btn")
             .css({
-                marginLeft: "10px",
+                margin: "15px",
                 width: "150px",
                 height: "50px",
                 background: "#D88898",

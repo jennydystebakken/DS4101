@@ -26,8 +26,12 @@ img {
     position:relative;
  }
 
-#app {
-    align-items: center;
+#btn-div {
+    display: block;
+}
+
+.btn {
+
 }
 
 #logo {

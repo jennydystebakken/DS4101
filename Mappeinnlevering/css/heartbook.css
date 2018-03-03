@@ -2,32 +2,33 @@ body {
     background-color: #F4E3E5;
 }
 
+html, body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+
+main {
+    padding-bottom: 95px;
+}
+
 p {
     font-family: 'Roboto', sans-serif;
-}
-
-footer {
-    background-color: #ffffff;
-    height: 45px;
-    padding: 1rem;
-    color: #333;
-    font-size: 0.7rem;
-    text-align: center;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    position: absolute;
-}
-
-#app {
-    align-items: center;
 }
 
 img {
     width: auto;
     height: 300px;
+} 
 
-}  
+#container {
+    min-height:100%;
+    position:relative;
+ }
+
+#app {
+    align-items: center;
+}
 
 #logo {
     display: block;
@@ -35,4 +36,16 @@ img {
     margin-right: auto;
     width: auto;
     height: 400px;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30px;
+    text-align: center;
+    background-color: #FFF;
+    color:#333;
+    font-size: 0.7rem;
 }

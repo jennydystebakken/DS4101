@@ -40,37 +40,31 @@ const HeartBook = {
 
             let all = $("#all")
             .on("click", function () {
-                $("#output").empty();
                 HB.getPictures(HeartbookModule.getAll());
             })
 
             let women = $("#women")
                 .on("click", function () {
-                  $("#output").empty();
                   HB.getPictures(HeartbookModule.getWomen());
                 })
 
             let men = $("#men")
             .on("click", function () {
-                $("#output").empty();
                 HB.getPictures(HeartbookModule.getMen());
             })
 
-            /*let biografi = $("#beskrivelse")
+            /*let bio = $("#description")
             .on("click", function () {
-                $("#output").empty();
-                HB.hentBilder(BibliotekModule.hentBiografi());
+                HB.getInformation();
             })*/
 
             let student = $("#students")
             .on("click", function() {
-                $("#output").empty();
                 HB.getPictures(HeartbookModule.getStudent());
             })
 
             let teacher = $("#teachers")
             .on("click", function() {
-                $("#output").empty();
                 HB.getPictures(HeartbookModule.getTeacher());
             })
 
@@ -81,17 +75,17 @@ const HeartBook = {
         return HB.htmlWrap
     },
     getPictures(person) {
+      $("#output").empty()
         let out = $("#output")
 
         for (let i = 0; i < person.length; i++) {
             let picture = $("<img>", {
                 src: "images/profiles/" + person[i].imagesrc + ".png"
-            })
-            .on("click", function (){
-                $(`<p>${person[i].name}</p>`)
-            })
-            .appendTo(out)
+                })
+                .on("click", function (){
+                  $(`<h3>${person[i].name}</h3`)
+                })
+                .appendTo(out)
+            }
         }
-    }
-
 }

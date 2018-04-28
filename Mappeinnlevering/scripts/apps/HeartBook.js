@@ -109,13 +109,4 @@ function addClass(elem) {
         a[i].classList.remove('largeImg');
     }
     elem.classList.add('largeImg');
-            let picture = $("<img>", {
-                src: "images/profiles/" + person[i].imagesrc + ".png"
-                })
-                .on("click", function (){
-                  $(`<h3>${person[i].name}</h3`)
-                })
-                .appendTo(out)
-            }
-        }
 }

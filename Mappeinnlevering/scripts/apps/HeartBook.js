@@ -19,7 +19,6 @@ const HeartBook = {
             })
         }()
 
-
         const GUI = function () {
             let he = $("<h3>", {
             })
@@ -36,55 +35,51 @@ const HeartBook = {
                 fontSize: "15px",
                 color: "#FFFFFF",
                 boxShadow: "0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)",
-                
+
             })
 
-            let alle = $("#alle")
+            let all = $("#all")
             .on("click", function () {
-                $("#output").empty();
-                HB.hentBilder(BibliotekModule.hentAlle());
+                HB.getPictures(HeartbookModule.getAll());
             })
 
-            let kvinner = $("#kvinner")
+            let women = $("#women")
                 .on("click", function () {
-                  $("#output").empty();
-                  HB.hentBilder(BibliotekModule.hentKvinne());
+                  HB.getPictures(HeartbookModule.getWomen());
                 })
 
-            let menn = $("#menn")
+            let men = $("#men")
             .on("click", function () {
-                $("#output").empty();
-                HB.hentBilder(BibliotekModule.hentMenn());
+                HB.getPictures(HeartbookModule.getMen());
             })
 
-            let biografi = $("#beskrivelse")
+            /*let bio = $("#description")
             .on("click", function () {
-                $("#output").empty();
-                HB.hentBilder(BibliotekModule.hentBiografi());
-            })
+                HB.getInformation();
+            })*/
 
-            let student = $("#student")
+            let student = $("#students")
             .on("click", function() {
-                $("#output").empty();
-                HB.hentBilder(BibliotekModule.hentStudent());
+                HB.getPictures(HeartbookModule.getStudent());
             })
 
-            let teacher = $("#teacher")
+            let teacher = $("#teachers")
             .on("click", function() {
-                $("#output").empty();
-                HB.hentBilder(BibliotekModule.hentTeacher());
+                HB.getPictures(HeartbookModule.getTeacher());
             })
 
-            HB.htmlWrap.append(he, alle, menn, kvinner, student, teacher, HB.output)
+            HB.htmlWrap.append(he, all, men, women, student, teacher, HB.output)
 
         }()
 
         return HB.htmlWrap
     },
-    hentBilder(person) {
+    getPictures(person) {
+      $("#output").empty()
         let out = $("#output")
 
         for (let i = 0; i < person.length; i++) {
+<<<<<<< HEAD
             let bilde = $("<img>", {
                 src: "images/profiles/" + person[i].bildeadresse + ".png"
             })
@@ -115,4 +110,15 @@ function addClass(elem) {
         a[i].classList.remove('largeImg');
     }
     elem.classList.add('largeImg');
+=======
+            let picture = $("<img>", {
+                src: "images/profiles/" + person[i].imagesrc + ".png"
+                })
+                .on("click", function (){
+                  $(`<h3>${person[i].name}</h3`)
+                })
+                .appendTo(out)
+            }
+        }
+>>>>>>> bd3740373352dddcea01ad667f6a2f1c61ec9305
 }

@@ -79,7 +79,6 @@ const HeartBook = {
         let out = $("#output")
 
         for (let i = 0; i < person.length; i++) {
-<<<<<<< HEAD
             let bilde = $("<img>", {
                 src: "images/profiles/" + person[i].bildeadresse + ".png"
             })
@@ -110,7 +109,6 @@ function addClass(elem) {
         a[i].classList.remove('largeImg');
     }
     elem.classList.add('largeImg');
-=======
             let picture = $("<img>", {
                 src: "images/profiles/" + person[i].imagesrc + ".png"
                 })
@@ -120,5 +118,4 @@ function addClass(elem) {
                 .appendTo(out)
             }
         }
->>>>>>> bd3740373352dddcea01ad667f6a2f1c61ec9305
 }

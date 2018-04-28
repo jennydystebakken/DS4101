@@ -88,11 +88,31 @@ const HeartBook = {
             let bilde = $("<img>", {
                 src: "images/profiles/" + person[i].bildeadresse + ".png"
             })
-            .on("click", function (){
-                $(`<p>${person[i].navn}</p>`)
-            })
-            .appendTo(out)
+
+            let div = $("<div>")
+                .append(bilde)
+                .one("click", function (){
+                    let brukernavn = $("<p>").text(`${person[i].navn}`)
+                    // SKAPAR ELEMENT
+                    let biografi = $("<p>").text(`${person[i].biografi}`)
+                    let alder = $("<p>").text(`${person[i].alder}`)
+                    let kjonn = $("<p>").text(`${person[i].kjonn}`)
+                    let stilling = $("<p>").text(`${person[i].stilling}`)
+                    // SITTER FAST ELEMENT I DIVEN
+                    $(this).append(brukernavn, alder, kjonn, stilling, biografi)
+                })
+                .appendTo(out)
         }
     }
 
+    
+
+}
+
+function addClass(elem) {
+    var a = document.getElementsByTagName('a')
+    for (i = 0; i < a.length; i++) {
+        a[i].classList.remove('largeImg');
+    }
+    elem.classList.add('largeImg');
 }

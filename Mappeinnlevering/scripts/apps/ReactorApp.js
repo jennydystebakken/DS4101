@@ -124,7 +124,6 @@ const ReactorApp = {
                 })
                 .on('click', function () {
                     /*Skriver hva knappen gjør*/
-                    RA.coolDown()
                     RA.ArrowShakingVFast()
                     RA.arrowShakingVSlow()
                 })
@@ -148,13 +147,15 @@ const ReactorApp = {
                 })
                 .on('click', function () {
                     /*Skriver hva knappen gjør*/
-                    RA.coolDown()
                     RA.arrowShakingHSlow()
                     RA.arrowShakingHFast()
                     RA.rotatePumpV()
 
                 })
-            div.append(btn1, btn2)
+
+                let slider = $('<div id="slider">')
+
+            div.append(btn1, btn2, slider)
 
             RA.wrapper.append(div)
         }() /*end init*/
@@ -252,16 +253,4 @@ const ReactorApp = {
                     ReactorApp.setBoxSize()
             })
     },
-   
-/*Koble markøren til funksjonen setBoxSize, og parameteret position skal endre på verdien translate X (startpunkt i SVG: 594, første verdien).*/ 
-
-    /*let box = $("#marker")
-        .css(
-            {
-                width: 50,
-                height: 50,
-                backgroundColor: "rgb(100, 100, 100)"
-            }
-        );*/
-
 }

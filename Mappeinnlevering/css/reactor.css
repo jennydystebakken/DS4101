@@ -26,6 +26,12 @@ p {
     color: #828A95;
 }
 
+.reactor {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 2rem;
+}
+
 #slider {
     display: block;
     margin-left: auto;

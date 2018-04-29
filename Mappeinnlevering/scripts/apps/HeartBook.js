@@ -87,12 +87,11 @@ const HeartBook = {
                 .append(imagesrc)
                 .one("click", function (){
                     let brukernavn = $("<p>").text(`${person[i].name}`)
-                    // SKAPAR ELEMENT
                     let description = $("<p>").text(`${person[i].description}`)
                     let age = $("<p>").text(`${person[i].age}`)
                     let gender = $("<p>").text(`${person[i].gender}`)
                     let post = $("<p>").text(`${person[i].post}`)
-                    // SITTER FAST ELEMENT I DIVEN
+
                     $(this).append(brukernavn, name, gender, post, description)
                 })
                 .appendTo(out)

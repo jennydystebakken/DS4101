@@ -116,52 +116,46 @@ const ReactorApp = {
 
 
 
-            let btn1 = $('<button>')
+            let btn1 = $('<button class="btn">')
                 .text('Start reaktor 1')
-                .css({
-                    marginBottom: "10px",
-                    display: "block",
-                    marginLeft: "auto",
-                    marginRight: "auto",
-                    width: "150px",
-                    height: "50px",
-                    background: "#828A95",
-                    borderRadius: "10px",
-                    border: "none",
-                    fontFamily: "'Roboto', sans-serif",
-                    fontSize: "15px",
-                    color: "#FFFFFF",
-                    boxShadow: "0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)"
-                })
                 .on('click', function () {
                     /*Skriver hva knappen gjør*/
                     RA.ArrowShakingVFast()
                     RA.arrowShakingVSlow()
                 })
 
-            let btn2 = $('<button>')
+            let btn2 = $('<button class="btn">')
                 .text('Start reaktor 2')
-                .css({
-                    marginBottom: "40px",
-                    display: "block",
-                    marginLeft: "auto",
-                    marginRight: "auto",
-                    width: "150px",
-                    height: "50px",
-                    background: "#828A95",
-                    borderRadius: "10px",
-                    border: "none",
-                    fontFamily: "'Roboto', sans-serif",
-                    fontSize: "15px",
-                    color: "#FFFFFF",
-                    boxShadow: "0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)"
+                .on('click', function () {
+                    /*Skriver hva knappen gjør*/
+                    RA.arrowShakingHSlow()
+                    RA.arrowShakingHFast()
+                    RA.rotatePumpV()
+
                 })
-<<<<<<< HEAD
+
+                let btn3 = $('<button class="btn">')
+                .text('Skru opp temperaturen')
+                .on('click', function () {
+                    /*Skriver hva knappen gjør*/
+                    RA.arrowShakingHSlow()
+                    RA.arrowShakingHFast()
+                    RA.rotatePumpV()
+
+                })
+
+                let btn4 = $('<button class="btn">')
+                .text('Skru ned temperaturen')
+                .on('click', function () {
+                    /*Skriver hva knappen gjør*/
+                    RA.arrowShakingHSlow()
+                    RA.arrowShakingHFast()
+                    RA.rotatePumpV()
+
+                })
 
                 let btn5 = $('<button>')
                 .text('Skru av')
-=======
->>>>>>> parent of a30f9b7... gråter
                 .on('click', function () {
                     /*Skriver hva knappen gjør*/
                     RA.arrowShakingHSlow()
@@ -172,7 +166,7 @@ const ReactorApp = {
 
                 let slider = $('<div id="slider">')
 
-            div.append(btn1, btn2, slider)
+            div.append(btn1, btn2, btn3, btn4, btn5)
 
             RA.wrapper.append(div)
         }() /*end init*/

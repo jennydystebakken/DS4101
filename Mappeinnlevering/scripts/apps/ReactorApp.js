@@ -115,6 +115,29 @@ const ReactorApp = {
             let div = $('<div class="MyClass">')
 
 
+            let btn1 = $('<button>')
+                .text('Start reaktor 1')
+                .css({
+                    marginBottom: "10px",
+                    display: "block",
+                    marginLeft: "auto",
+                    marginRight: "auto",
+                    width: "150px",
+                    height: "50px",
+                    background: "#828A95",
+                    borderRadius: "10px",
+                    border: "none",
+                    fontFamily: "'Roboto', sans-serif",
+                    fontSize: "15px",
+                    color: "#FFFFFF",
+                    boxShadow: "0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)"
+                })
+                .on('click', function () {
+                    /*Skriver hva knappen gjør*/
+                    RA.ArrowShakingVFast()
+                    RA.arrowShakingVSlow()
+                })
+
 
             let btn1 = $('<button class=btn>')
                 .text('Start reaktor 1')

@@ -29,8 +29,7 @@ p {
 .reactor {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 3rem;
-    align-content: center;
+    margin: 2rem;
 }
 
 .btn {

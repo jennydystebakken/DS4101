@@ -33,6 +33,22 @@ p {
     align-content: center;
 }
 
+.btn {
+    margin: 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 50px;
+    background: #828A95;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #FFFFFF;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
 #slider {
     display: block;
     margin-left: auto;

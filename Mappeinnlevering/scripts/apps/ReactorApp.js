@@ -4,7 +4,7 @@ const ReactorApp = {
     init() {
         const RA = ReactorApp
         const elements = function () {
-            RA.wrapper = $('<div id=wrapper>')
+            RA.wrapper = $('<div id="wrapper">')
         }()
 
         const gui = function () {
@@ -116,15 +116,30 @@ const ReactorApp = {
 
 
 
-            let btn1 = $('<button class=btn>')
+            let btn1 = $('<button>')
                 .text('Start reaktor 1')
-                .on('click', function() {
+                .css({
+                    marginBottom: "10px",
+                    display: "block",
+                    marginLeft: "auto",
+                    marginRight: "auto",
+                    width: "150px",
+                    height: "50px",
+                    background: "#828A95",
+                    borderRadius: "10px",
+                    border: "none",
+                    fontFamily: "'Roboto', sans-serif",
+                    fontSize: "15px",
+                    color: "#FFFFFF",
+                    boxShadow: "0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)"
+                })
+                .on('click', function () {
                     /*Skriver hva knappen gjør*/
                     RA.ArrowShakingVFast()
                     RA.arrowShakingVSlow()
                 })
 
-            let btn2 = $('<button class=btn>')
+            let btn2 = $('<button>')
                 .text('Start reaktor 2')
                 .on('click', function () {
                     /*Skriver hva knappen gjør*/
@@ -135,7 +150,7 @@ const ReactorApp = {
                 })
                 
 
-            div.append(btn1, btn2, btn3, btn4, btn5)
+            div.append(btn1, btn2)
 
             RA.wrapper.append(div)
         }() /*end init*/

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Jenny</title>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/Jenny.css">
 </head>
 <body>
@@ -11,12 +12,21 @@
         <script src="scripts/jquery/jquery-transform-plugin.js"></script>
         <script>
              $(function(){
-                
+                $("#Sentence1")
+                    .animate(
+                        {
+                            width: "+=100",
+                            borderWidth: "0"
+                        },
+                        {
+                            duration: 2000
+                        }
+                    )
+
                 $("#Sentence2")
                  
                     .animate(
                         {
-                            opacity: 1,
                             width: "+=100",
                             borderWidth: "0"
                         },
@@ -27,18 +37,58 @@
                             }
                         }                        
                     )
+                $("#Sentence3")
+
+                .animate(
+                    {
+                        width: "+=100",
+                        borderWidth: "0"
+                    },
+                    {
+                        duration: 1000,
+                        complete: function(){
+                            //alert();
+                        }
+                    }
+                )
+
                     .promise()
                     .done(function(){
                         moveSentence();
+                        moveSentence2();
+                        moveSentence3();
+                        blueFlowerShake();
                     })
-                
+                $("#Sentence1").css(
+                    {
+                        transform: "translateX(1000px)"
+                    }
+                )
+
                 $("#Sentence2").css(
                         {
                             transform: "translateX(-700px)"
                         }
-                    )                    
+                    )    
+                    
+                $("#Sentence3").css(
+                    {
+                        transform: "translateX(1000px)"
+                    }
+                )
                 
                 function moveSentence(){
+                    $("#Sentence1").animate(
+                        {
+                            transform: "translateX(0px)"
+                        },
+                        {
+                            duration: 3000
+                        }
+                    )
+                }
+
+                function moveSentence2(){
                     $("#Sentence2").animate(
                         {
                             transform: "translateX(0px)"
@@ -47,7 +97,33 @@
                             duration: 3000
                         }
                     )
-                }                                 
+                }  
+                
+                function moveSentence3(){
+                    $("#Sentence3").animate(
+                        {
+                            transform: "translateX(0px)"
+                        },
+                        {
+                            duration: 2000
+                        }
+                    )
+                }
+
+                function blueFlowerShake() {
+                    console.log("HEI")
+                    $("#BlueFlower1, #BlueFlower2").animate(
+                        {
+                            transform: "translate(2 2)"
+                        }, 200, function() {
+                            $("#BlueFlower1, #BlueFlower2").animate(
+                                {
+                                    transform: "translate(-2 -2)"
+                                }, 200
+                            )
+                        }
+                    )
+                }
                 
             })
         </script>

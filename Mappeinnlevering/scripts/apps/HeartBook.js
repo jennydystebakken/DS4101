@@ -44,7 +44,7 @@ const HeartBook = {
                 HB.getPictures(HeartbookModule.getAll());
             })
 
-            let women = $("#women")
+            let women = $("#woman")
                 .on("click", function () {
                   HB.getPictures(HeartbookModule.getWomen());
                 })
@@ -69,7 +69,7 @@ const HeartBook = {
                 HB.getPictures(HeartbookModule.getTeacher());
             })
 
-            HB.htmlWrap.append(he, all, men, women, student, teacher, HB.output)
+            HB.htmlWrap.append(he, all, men, woman, student, teacher, HB.output)
 
         }()
 

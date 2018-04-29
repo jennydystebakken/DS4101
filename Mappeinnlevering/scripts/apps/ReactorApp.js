@@ -154,7 +154,7 @@ const ReactorApp = {
 
                 })
 
-                let btn5 = $('<button class="btn">')
+                let btn5 = $('<button>')
                 .text('Skru av')
                 .on('click', function () {
                     /*Skriver hva knappen gjør*/

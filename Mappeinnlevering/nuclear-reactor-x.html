@@ -18,44 +18,9 @@
     <h1 id="header">ATOMREAKTOR RBMK-1000!</h1>
     <h2 id="undertittel">Trykk for å lese spennende fakta om RBMK-1000</h2>
 
-    <!--Infoboks-
-    <div id="infoboks">
-        <h3 class="overskrift">Tsjernobyl Kjernekraftverk</h3>
-        <div class="boks">
-            <p class="faktatekst">
-                Tsjernobyl Kjernekraftverk er et nedstengt kjernekraftverk i nærheten av byen Pripyat i Ukraina, ca. 18 km nordvest for byen Tsjernobyl, ca. 16 km fra grensen mellom Ukraina og Hviterussland, og ca. 110 km nord for Kiev. Kraftverket er mest kjent for ulykken som skjedde 26. april 1986, da reaktor nr. 4 ble overopphetet, og det oppstod en eksplosjon, med etterfølgende branner, og store radioaktive utslipp. På grunn av stort behov for elektrisk kraft var kraftverket i drift helt frem til desember 2000. Selv om kraftverket i dag er nedstengt, er det fremdeles folk som jobber ved de resterende tre reaktorene. Disse inneholder radioaktivt brensel, og må overvåkes kontinuerlig.
-            </p>
-        </div>
-        <h3 class="overskrift">Fire reaktorer</h3>
-        <div class="boks">
-            <p class="faktatekst">
-                V.I. Lenin Kjernekraftverk som det var kjent som i sovjettiden, bestod av fire reaktorer av typen RBMK-1000, hver med en kapasitet til å produsere 1000 MW med elektrisk kraft (3.2 GW med termisk kraft).
-            </p>
-        </div>
-        <h3 class="overskrift">Bygningen</h3>
-        <div class="boks">
-            <p class="faktatekst">
-                Byggingen av kraftverket og byen Pripyat, som skulle huse arbeidere og deres familier, begynte med reaktor nr. 1 i 1970. Dette var det tredje kjernekraftverket i Sovjetunionen med reaktorer av typen RBMK (etter Leningrad kjernekraftverk og Kursk kjernekraftverk), og det første kjernekraftverket på Ukrainsk jord noensinne. Reaktor nr. 1 stod ferdigstilt i 1977, og ble etterfulgt av nr. 2 i 1978, nr. 3 i 1981 og nr. 4 i 1983. Ytterligere to reaktorer (nr. 5 og 6), hver med en produksjonskapasitet på 1000 MW, var under bygging da ulykken inntraff.[1] Reaktor nr. 5 var nesten ferdig på ulykkestidspunktet, og var planlagt satt i drift høsten 1986. Etter ulykken har denne reaktoren blitt forlatt, og man kan i dag se at bygningskranene fortsatt står der.
-            </p>
-        </div>
-        <h3 class="overskrift">Strukturen</h3>
-        <div class="boks">
-            <p class="faktatekst">
-                Strukturen for reaktor nr. 1 og 2 ved kraftverket var veldig ulik fra reaktor nr. 3 og 4, på den måten at de hadde et mer robust system for lokalisering av ulykker. Kontrollrommene for reaktor nr. 3 og 4 lå ved siden av reaktorene, uten noen ekstra betong- eller stålvegg. Men kontrollrommene for reaktor nr. 1 og 2 lå bak reaktorene, med en tykk betongvegg mellom de to. Det har i ettertid blitt hevded at dersom den samme ulykken hadde skjedd ved reaktor nr. 1 eller 2, ville den ha holdt seg mer innenfor bygningen, og at taket på reaktoren kunne ha blitt reparert etter ulykken, i stedet for å bygge en sarkofag.
-            </p>
-        </div>
-        <h3 class="overskrift">Reaktorene</h3>
-        <div class="boks">
-            <p class="faktatekst">
-                Alle reaktorene ved kraftverket var av typen RBMK-1000, lettvannskjølt og grafittmoderert, en sovjetisk type atomreaktor som kun ble brukt i Sovjetunionen, og aldri eksportert. Disse reaktorene er hovedsakelig designet for å lage plutonium for atomvåpen, med elektrisk kraft som et biprodukt. Grafitten brukes som en moderator for å bremse nøytronene under en fisjon. Disse modellene blir regnet som verdens farligste blant annet på grunn av brannfaren i grafitten og fordi de mangler en sikkerhetsinneslutning rundt reaktoren som kan hindre utslipp ved en ulykke. Under ulykken i 1986 ble temperaturen så høy at grafitten smeltet fast og tok fyr.
-            </p>
-        </div>
-    </div>
--->
-
     <!-- SVG-bilde -->
     <div class="reactor">
-        <div class="reactor-temp-v"></div>
+        
         <?xml version="1.0" encoding="UTF-8"?>
         <svg width="927px" height="660px" viewBox="0 0 927 660" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
@@ -367,12 +332,59 @@
             </g>
         </g>
         </svg>
-        <div class="reactor-temp-h"></div>
+        
+        
+    </div>
+
+    <div class="sliders">
+                <div class="reactor-temp-v">
+                        <div id="reactor-v"></div>
+                    </div>
+                <div id="slider1"></div>
+                <div class="reactor-temp-h">
+                        <div id="reactor-h"></div>
+                    </div> 
+                <div id="slider2"></div>
+    </div>
+   
+
+    <div id="box">
+
+            
     </div>
     
-    <div id="box"></div>
-    
-    
+    <div id="infoboks">
+            <h3 class="overskrift">Tsjernobyl Kjernekraftverk</h3>
+            <div class="boks">
+                <p class="faktatekst">
+                    Tsjernobyl Kjernekraftverk er et nedstengt kjernekraftverk i nærheten av byen Pripyat i Ukraina, ca. 18 km nordvest for byen Tsjernobyl, ca. 16 km fra grensen mellom Ukraina og Hviterussland, og ca. 110 km nord for Kiev. Kraftverket er mest kjent for ulykken som skjedde 26. april 1986, da reaktor nr. 4 ble overopphetet, og det oppstod en eksplosjon, med etterfølgende branner, og store radioaktive utslipp. På grunn av stort behov for elektrisk kraft var kraftverket i drift helt frem til desember 2000. Selv om kraftverket i dag er nedstengt, er det fremdeles folk som jobber ved de resterende tre reaktorene. Disse inneholder radioaktivt brensel, og må overvåkes kontinuerlig.
+                </p>
+            </div>
+            <h3 class="overskrift">Fire reaktorer</h3>
+            <div class="boks">
+                <p class="faktatekst">
+                    V.I. Lenin Kjernekraftverk som det var kjent som i sovjettiden, bestod av fire reaktorer av typen RBMK-1000, hver med en kapasitet til å produsere 1000 MW med elektrisk kraft (3.2 GW med termisk kraft).
+                </p>
+            </div>
+            <h3 class="overskrift">Bygningen</h3>
+            <div class="boks">
+                <p class="faktatekst">
+                    Byggingen av kraftverket og byen Pripyat, som skulle huse arbeidere og deres familier, begynte med reaktor nr. 1 i 1970. Dette var det tredje kjernekraftverket i Sovjetunionen med reaktorer av typen RBMK (etter Leningrad kjernekraftverk og Kursk kjernekraftverk), og det første kjernekraftverket på Ukrainsk jord noensinne. Reaktor nr. 1 stod ferdigstilt i 1977, og ble etterfulgt av nr. 2 i 1978, nr. 3 i 1981 og nr. 4 i 1983. Ytterligere to reaktorer (nr. 5 og 6), hver med en produksjonskapasitet på 1000 MW, var under bygging da ulykken inntraff.[1] Reaktor nr. 5 var nesten ferdig på ulykkestidspunktet, og var planlagt satt i drift høsten 1986. Etter ulykken har denne reaktoren blitt forlatt, og man kan i dag se at bygningskranene fortsatt står der.
+                </p>
+            </div>
+            <h3 class="overskrift">Strukturen</h3>
+            <div class="boks">
+                <p class="faktatekst">
+                    Strukturen for reaktor nr. 1 og 2 ved kraftverket var veldig ulik fra reaktor nr. 3 og 4, på den måten at de hadde et mer robust system for lokalisering av ulykker. Kontrollrommene for reaktor nr. 3 og 4 lå ved siden av reaktorene, uten noen ekstra betong- eller stålvegg. Men kontrollrommene for reaktor nr. 1 og 2 lå bak reaktorene, med en tykk betongvegg mellom de to. Det har i ettertid blitt hevded at dersom den samme ulykken hadde skjedd ved reaktor nr. 1 eller 2, ville den ha holdt seg mer innenfor bygningen, og at taket på reaktoren kunne ha blitt reparert etter ulykken, i stedet for å bygge en sarkofag.
+                </p>
+            </div>
+            <h3 class="overskrift">Reaktorene</h3>
+            <div class="boks">
+                <p class="faktatekst">
+                    Alle reaktorene ved kraftverket var av typen RBMK-1000, lettvannskjølt og grafittmoderert, en sovjetisk type atomreaktor som kun ble brukt i Sovjetunionen, og aldri eksportert. Disse reaktorene er hovedsakelig designet for å lage plutonium for atomvåpen, med elektrisk kraft som et biprodukt. Grafitten brukes som en moderator for å bremse nøytronene under en fisjon. Disse modellene blir regnet som verdens farligste blant annet på grunn av brannfaren i grafitten og fordi de mangler en sikkerhetsinneslutning rundt reaktoren som kan hindre utslipp ved en ulykke. Under ulykken i 1986 ble temperaturen så høy at grafitten smeltet fast og tok fyr.
+                </p>
+            </div>
+        </div>
 
     <body>
 

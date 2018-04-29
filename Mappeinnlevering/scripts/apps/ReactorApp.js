@@ -36,22 +36,22 @@ const ReactorApp = {
             $("#Atomreaktor")
                 .css({
                     display: "block",
-                    marginRight: "2rem",
-                    width: "1000px",
-                    marginTop: "50px",
-                    marginBottom: "50px"
+                    margin: "2rem",
+                    width: "700px",
+                    padding: "2rem"
                 })
             $(".reactor-temp-v")
                 .css({
                     width: "70px",
-                    height: "700px",
+                    height: "650px",
                     border: "solid"
                 })
             $(".reactor-temp-h")
                 .css({
                     width: "70px",
-                    height: "700px",
-                    border: "solid"
+                    height: "650px",
+                    border: "solid",
+                    marginLeft: "3rem"
                 })
            $("#Temperatur") 
                 .css({
@@ -115,33 +115,10 @@ const ReactorApp = {
             let div = $('<div class="MyClass">')
 
 
-            let btn1 = $('<button>')
-                .text('Start reaktor 1')
-                .css({
-                    marginBottom: "10px",
-                    display: "block",
-                    marginLeft: "auto",
-                    marginRight: "auto",
-                    width: "150px",
-                    height: "50px",
-                    background: "#828A95",
-                    borderRadius: "10px",
-                    border: "none",
-                    fontFamily: "'Roboto', sans-serif",
-                    fontSize: "15px",
-                    color: "#FFFFFF",
-                    boxShadow: "0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)"
-                })
-                .on('click', function () {
-                    /*Skriver hva knappen gjør*/
-                    RA.ArrowShakingVFast()
-                    RA.arrowShakingVSlow()
-                })
-
 
             let btn1 = $('<button class=btn>')
                 .text('Start reaktor 1')
-                .on('click', function () {
+                .on('click', function() {
                     /*Skriver hva knappen gjør*/
                     RA.ArrowShakingVFast()
                     RA.arrowShakingVSlow()
@@ -260,7 +237,6 @@ const ReactorApp = {
         
     },
 
-    
     coolDown() {
         $("#slider").slider({
             min: 50,

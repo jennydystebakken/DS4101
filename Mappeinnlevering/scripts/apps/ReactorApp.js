@@ -36,22 +36,22 @@ const ReactorApp = {
             $("#Atomreaktor")
                 .css({
                     display: "block",
-                    marginRight: "2rem",
-                    width: "1000px",
-                    marginTop: "50px",
-                    marginBottom: "50px"
+                    margin: "2rem",
+                    width: "700px",
+                    padding: "2rem"
                 })
             $(".reactor-temp-v")
                 .css({
                     width: "70px",
-                    height: "700px",
+                    height: "650px",
                     border: "solid"
                 })
             $(".reactor-temp-h")
                 .css({
                     width: "70px",
-                    height: "700px",
-                    border: "solid"
+                    height: "650px",
+                    border: "solid",
+                    marginLeft: "3rem"
                 })
            $("#Temperatur") 
                 .css({

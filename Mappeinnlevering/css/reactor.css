@@ -29,7 +29,8 @@ p {
 .reactor {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 2rem;
+    margin: 3rem;
+    align-content: center;
 }
 
 #slider {

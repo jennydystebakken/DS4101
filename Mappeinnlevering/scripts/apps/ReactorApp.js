@@ -133,38 +133,7 @@ const ReactorApp = {
                     RA.rotatePumpV()
 
                 })
-
-                let btn3 = $('<button class=btn>')
-                .text('Skru opp temperaturen')
-                .on('click', function () {
-                    /*Skriver hva knappen gjør*/
-                    RA.arrowShakingHSlow()
-                    RA.arrowShakingHFast()
-                    RA.rotatePumpV()
-
-                })
-
-                let btn4 = $('<button class=btn>')
-                .text('Skru ned temperaturen')
-                .on('click', function () {
-                    /*Skriver hva knappen gjør*/
-                    RA.arrowShakingHSlow()
-                    RA.arrowShakingHFast()
-                    RA.rotatePumpV()
-
-                })
-
-                let btn5 = $('<button class=btn>')
-                .text('Skru av')
-                .on('click', function () {
-                    /*Skriver hva knappen gjør*/
-                    RA.arrowShakingHSlow()
-                    RA.arrowShakingHFast()
-                    RA.rotatePumpV()
-
-                })
-
-                let slider = $('<div id="slider">')
+                
 
             div.append(btn1, btn2, btn3, btn4, btn5)
 
@@ -235,32 +204,5 @@ const ReactorApp = {
             ReactorApp.rotatePumpV()
         })
         
-    },
-
-    coolDown() {
-        $("#slider").slider({
-            min: 50,
-            max: 1000,
-            orientation: "horizontal",
-            step: 100,
-            values: [1000],
-            slide: function (event, ui) {
-
-                //setBoxSize(ui.value);
-            }
-        }, function () {
-            ReactorApp.coolDown()
-            ReactorApp.setBoxSize()
-        })
-    },
-
-    setBoxSize(position){
-        $("#cooler")
-            .css(
-                {
-                    transform: "translateX(position)"
-                }, function() {
-                    ReactorApp.setBoxSize()
-            })
     },
 }

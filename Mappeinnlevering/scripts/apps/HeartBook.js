@@ -80,7 +80,7 @@ const HeartBook = {
 
         for (let i = 0; i < person.length; i++) {
             let imagesrc = $("<img>", {
-                src: "images/profiles/" + person[i].bildeadresse + ".png"
+                src: "images/profiles/" + person[i].imagesrc + ".png"
             })
 
             let div = $("<div>")

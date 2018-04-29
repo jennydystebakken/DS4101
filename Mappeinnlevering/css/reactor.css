@@ -30,6 +30,7 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 2rem;
+<<<<<<< HEAD
 }
 
 .btn {
@@ -46,6 +47,8 @@ p {
     font-size: 1rem;
     color: #FFFFFF;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+=======
+>>>>>>> parent of 95fbe67... gjort maasse
 }
 
 #slider {

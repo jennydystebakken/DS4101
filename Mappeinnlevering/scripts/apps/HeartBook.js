@@ -79,28 +79,27 @@ const HeartBook = {
         let out = $("#output")
 
         for (let i = 0; i < person.length; i++) {
-            let bilde = $("<img>", {
+            let imagesrc = $("<img>", {
                 src: "images/profiles/" + person[i].bildeadresse + ".png"
             })
 
             let div = $("<div>")
-                .append(bilde)
+                .append(imagesrc)
                 .one("click", function (){
-                    let brukernavn = $("<p>").text(`${person[i].navn}`)
+                    let brukernavn = $("<p>").text(`${person[i].name}`)
                     // SKAPAR ELEMENT
-                    let biografi = $("<p>").text(`${person[i].biografi}`)
-                    let alder = $("<p>").text(`${person[i].alder}`)
-                    let kjonn = $("<p>").text(`${person[i].kjonn}`)
-                    let stilling = $("<p>").text(`${person[i].stilling}`)
+                    let description = $("<p>").text(`${person[i].description}`)
+                    let age = $("<p>").text(`${person[i].age}`)
+                    let gender = $("<p>").text(`${person[i].gender}`)
+                    let post = $("<p>").text(`${person[i].post}`)
                     // SITTER FAST ELEMENT I DIVEN
-                    $(this).append(brukernavn, alder, kjonn, stilling, biografi)
+                    $(this).append(brukernavn, name, gender, post, description)
                 })
                 .appendTo(out)
         }
     }
 
     
-
 }
 
 function addClass(elem) {

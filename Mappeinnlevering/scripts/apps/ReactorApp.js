@@ -265,7 +265,6 @@ const ReactorApp = {
     },
 
     arrowShakingVSlow() {
-        console.log("HI")
         $("#Atomreaktor").css("position, static")
 
         $("#3pilerV").animate({
@@ -279,7 +278,6 @@ const ReactorApp = {
     },
 
     ArrowShakingVFast() {
-        console.log("HI")
         $("#Atomreaktor").css("position", "static")
 
         $("#4pilerRødV, #4pilerV").animate({

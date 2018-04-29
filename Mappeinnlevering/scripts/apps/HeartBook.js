@@ -75,7 +75,7 @@ const HeartBook = {
         return HB.htmlWrap
     },
     getPictures(person) {
-      $("#output").empty()
+      $("#output").empty()  
         let out = $("#output")
 
         for (let i = 0; i < person.length; i++) {
@@ -93,6 +93,10 @@ const HeartBook = {
                     let post = $("<p>").text(`${person[i].post}`)
 
                     $(this).append(brukernavn, name, gender, post, description)
+                })
+                .css({
+                    color: "#D88898"
+
                 })
                 .appendTo(out)
         }

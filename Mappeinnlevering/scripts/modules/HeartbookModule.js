@@ -7,7 +7,7 @@ const HeartbookModule = (function () {
             'age': '22',
             'description': 'Vegetarian, the only meat I eat is dick.',
             'gender': 'Man',
-            'post': 'student',
+            'post': 'Student',
         },
         {
             'name': 'Jenny Mylius Sandmo',
@@ -15,7 +15,7 @@ const HeartbookModule = (function () {
             'age': '21',
             'description': 'Det eneste lavere enn standardene mine er saldoen min.',
             'gender': 'Women',
-            'post': 'student',
+            'post': 'Student',
         },
         {
             'name': 'Pär Joona',
@@ -23,7 +23,7 @@ const HeartbookModule = (function () {
             'age': '25',
             'description': 'Kan jeg få en veibeskrivelse til hjertet ditt?',
             'gender': 'Man',
-            'post': 'student',
+            'post': 'Student',
         },
         {
             'name': 'Elisabeth Henriksen',
@@ -31,7 +31,7 @@ const HeartbookModule = (function () {
             'age': '22',
             'description': 'Svømme kan jeg, men i dine øyne drukner jeg..',
             'gender': 'Women',
-            'post': 'student',
+            'post': 'Student',
         },
         {
             'name': 'Simen Johansen',
@@ -39,7 +39,7 @@ const HeartbookModule = (function () {
             'age': '22',
             'description': 'Jeg satser på at dine standarder er mye lavere enn mine.',
             'gender': 'Man',
-            'post': 'student',
+            'post': 'Student',
         },
         {
             'name': 'Ben Johansen',
@@ -47,7 +47,7 @@ const HeartbookModule = (function () {
             'age': '20',
             'description': 'Im cute, fun and love life! I hate playing head games unless they involve the mouth.',
             'gender': 'Man',
-            'post': 'student',
+            'post': 'Student',
         },
         {
             'name': 'Zachy Laguda',
@@ -55,7 +55,7 @@ const HeartbookModule = (function () {
             'age': '22',
             'description': 'The asian for any occasion. Msg if you play pokemon.',
             'gender': 'Man',
-            'post': 'student',
+            'post': 'Student',
         },
         {
             'name': 'Trine Bekkejorden',
@@ -63,7 +63,7 @@ const HeartbookModule = (function () {
             'age': '24',
             'description': 'The only hair between my legs should be your beard.',
             'gender': 'Women',
-            'post': 'student',
+            'post': 'Student',
         },
         {
             'name': 'Hanne Sørum',
@@ -71,7 +71,7 @@ const HeartbookModule = (function () {
             'age': '43',
             'description': 'I could really make use of a massage, an orgasm, hard apple cider and a check for $300,000',
             'gender': 'Women',
-            'post': 'teacher',
+            'post': 'Teacher',
         },
         {
             'name': 'Helene Thorkildsen',
@@ -79,7 +79,7 @@ const HeartbookModule = (function () {
             'age': '21',
             'description': 'Only thing tighter than my asshole is family:-)',
             'gender': 'Women',
-            'post': 'student',
+            'post': 'Student',
         },
         {
             'name': 'Linda Nordåk',
@@ -87,7 +87,7 @@ const HeartbookModule = (function () {
             'age': '23',
             'description': 'Oh youve found out you only live once? Please tell me more about your other scientific discoveries ',
             'gender': 'Women',
-            'post': 'student',
+            'post': 'Student',
         },
         {
             'name': 'Vibecke Osfoss',
@@ -95,7 +95,7 @@ const HeartbookModule = (function () {
             'age': '35',
             'description': 'You only live once!',
             'gender': 'Women',
-            'post': 'teacher',
+            'post': 'Teacher',
         },
         {
             'name': 'Per Lauvås',
@@ -103,7 +103,7 @@ const HeartbookModule = (function () {
             'age': '35',
             'description': 'You only live once!',
             'gender': 'Man',
-            'post': 'teacher',
+            'post': 'Teacher',
         },
         {
             'name': 'Eivind Brevik',
@@ -111,7 +111,7 @@ const HeartbookModule = (function () {
             'age': '35',
             'description': 'You only live once!',
             'gender': 'Man',
-            'post': 'teacher',
+            'post': 'Teacher',
         },
         {
             'name': 'Siri Fagernes',
@@ -119,7 +119,7 @@ const HeartbookModule = (function () {
             'age': '35',
             'description': 'You only live once!',
             'gender': 'Women',
-            'post': 'teacher',
+            'post': 'Teacher',
         },
         {
             'name': 'Rolando Gonzalez',
@@ -127,7 +127,7 @@ const HeartbookModule = (function () {
             'age': '35',
             'description': 'You only live once!',
             'gender': 'Man',
-            'post': 'teacher',
+            'post': 'Teacher',
         }
     ]
 

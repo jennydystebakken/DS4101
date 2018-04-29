@@ -116,7 +116,7 @@ const ReactorApp = {
 
 
 
-            let btn1 = $('<button class="btn">')
+            let btn1 = $('<button class=btn>')
                 .text('Start reaktor 1')
                 .on('click', function () {
                     /*Skriver hva knappen gjør*/
@@ -124,7 +124,7 @@ const ReactorApp = {
                     RA.arrowShakingVSlow()
                 })
 
-            let btn2 = $('<button class="btn">')
+            let btn2 = $('<button class=btn>')
                 .text('Start reaktor 2')
                 .on('click', function () {
                     /*Skriver hva knappen gjør*/
@@ -134,7 +134,7 @@ const ReactorApp = {
 
                 })
 
-                let btn3 = $('<button class="btn">')
+                let btn3 = $('<button class=btn>')
                 .text('Skru opp temperaturen')
                 .on('click', function () {
                     /*Skriver hva knappen gjør*/
@@ -144,7 +144,7 @@ const ReactorApp = {
 
                 })
 
-                let btn4 = $('<button class="btn">')
+                let btn4 = $('<button class=btn>')
                 .text('Skru ned temperaturen')
                 .on('click', function () {
                     /*Skriver hva knappen gjør*/
@@ -154,7 +154,7 @@ const ReactorApp = {
 
                 })
 
-                let btn5 = $('<button>')
+                let btn5 = $('<button class=btn>')
                 .text('Skru av')
                 .on('click', function () {
                     /*Skriver hva knappen gjør*/

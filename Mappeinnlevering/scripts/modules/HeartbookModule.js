@@ -14,7 +14,7 @@ const HeartbookModule = (function () {
             'imagesrc': 'Jenny',
             'age': '21',
             'description': 'Det eneste lavere enn standardene mine er saldoen min.',
-            'gender': 'Women',
+            'gender': 'Woman',
             'post': 'Student',
         },
         {
@@ -30,7 +30,7 @@ const HeartbookModule = (function () {
             'imagesrc': 'Beth',
             'age': '22',
             'description': 'Svømme kan jeg, men i dine øyne drukner jeg..',
-            'gender': 'Women',
+            'gender': 'Woman',
             'post': 'Student',
         },
         {
@@ -45,7 +45,7 @@ const HeartbookModule = (function () {
             'name': 'Ben Johansen',
             'imagesrc': 'Ben',
             'age': '20',
-            'description': 'Im cute, fun and love life! I hate playing head games unless they involve the mouth.',
+            'description': 'Jeg forventer ikke at du skal falle for meg, men du kan da i det minste snuble litt?',
             'gender': 'Man',
             'post': 'Student',
         },
@@ -61,24 +61,24 @@ const HeartbookModule = (function () {
             'name': 'Trine Bekkejorden',
             'imagesrc': 'Trine',
             'age': '24',
-            'description': 'The only hair between my legs should be your beard.',
-            'gender': 'Women',
+            'description': 'Er lei av singellivet!',
+            'gender': 'Woman',
             'post': 'Student',
         },
         {
             'name': 'Hanne Sørum',
             'imagesrc': 'Hanne ',
             'age': '43',
-            'description': 'I could really make use of a massage, an orgasm, hard apple cider and a check for $300,000',
-            'gender': 'Women',
+            'description': 'Det eneste lavere enn standardene mine er saldoen min.',
+            'gender': 'Woman',
             'post': 'Teacher',
         },
         {
             'name': 'Helene Thorkildsen',
             'imagesrc': 'Helene',
             'age': '21',
-            'description': 'Only thing tighter than my asshole is family:-)',
-            'gender': 'Women',
+            'description': 'Jeg forventer ikke at du skal falle for meg, men du kan da i det minste snuble litt?',
+            'gender': 'Woman',
             'post': 'Student',
         },
         {
@@ -86,7 +86,7 @@ const HeartbookModule = (function () {
             'imagesrc': 'Linda',
             'age': '23',
             'description': 'Oh youve found out you only live once? Please tell me more about your other scientific discoveries ',
-            'gender': 'Women',
+            'gender': 'Woman',
             'post': 'Student',
         },
         {
@@ -94,14 +94,14 @@ const HeartbookModule = (function () {
             'imagesrc': 'Vibece',
             'age': '35',
             'description': 'You only live once!',
-            'gender': 'Women',
+            'gender': 'Woman',
             'post': 'Teacher',
         },
         {
             'name': 'Per Lauvås',
             'imagesrc': 'Per',
             'age': '35',
-            'description': 'You only live once!',
+            'description': 'Det eneste lavere enn standardene mine er saldoen min.',
             'gender': 'Man',
             'post': 'Teacher',
         },
@@ -109,7 +109,7 @@ const HeartbookModule = (function () {
             'name': 'Eivind Brevik',
             'imagesrc': 'Eivind',
             'age': '35',
-            'description': 'You only live once!',
+            'description': 'Svømme kan jeg, men i dine øyne drukner jeg..',
             'gender': 'Man',
             'post': 'Teacher',
         },
@@ -117,15 +117,15 @@ const HeartbookModule = (function () {
             'name': 'Siri Fagernes',
             'imagesrc': 'Siri',
             'age': '35',
-            'description': 'You only live once!',
-            'gender': 'Women',
+            'description': 'Kan jeg få en veibeskrivelse til hjertet ditt?',
+            'gender': 'Woman',
             'post': 'Teacher',
         },
         {
             'name': 'Rolando Gonzalez',
             'imagesrc': 'Rolando',
             'age': '35',
-            'description': 'You only live once!',
+            'description': 'YOLO',
             'gender': 'Man',
             'post': 'Teacher',
         }
@@ -139,7 +139,7 @@ const HeartbookModule = (function () {
 
         let array = [];
         for (let i = 0; i < list.length; i++) {
-            if (list[i].gender === 'Women') {
+            if (list[i].gender === 'Woman') {
                 array.push(list[i]);
             }
         }
@@ -161,7 +161,7 @@ const HeartbookModule = (function () {
 
         let array = [];
         for (let i = 0; i < list.length; i++) {
-            if (list[i].post === 'student') {
+            if (list[i].post === 'Student') {
                 array.push(list[i]);
             }
         }
@@ -172,7 +172,7 @@ const HeartbookModule = (function () {
 
         let array = [];
         for (let i = 0; i < list.length; i++) {
-            if (list[i].post === 'teacher') {
+            if (list[i].post === 'Teacher') {
                 array.push(list[i]);
             }
         }

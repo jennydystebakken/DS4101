@@ -14,12 +14,13 @@ const HeartBook = {
 
         const elements = function () {
             HB.htmlWrap = $("<div>")
-            HB.output = $("<div>", {
+            HB.output = $("<div id=output>", {
                 id: "output"
             })
         }()
 
         const GUI = function () {
+
             let he = $("<h3>", {
             })
 
@@ -87,6 +88,10 @@ const HeartBook = {
                 .append(imagesrc)
                 .one("click", function (){
                     let brukernavn = $("<p>").text(`${person[i].name}`)
+                    .css({
+                        fontFamily: "'Roboto', sans-serif",
+                        fontWeight: "700",
+                    })
                     let description = $("<p>").text(`${person[i].description}`)
                     let age = $("<p>").text(`${person[i].age}`)
                     let gender = $("<p>").text(`${person[i].gender}`)
@@ -95,7 +100,8 @@ const HeartBook = {
                     $(this).append(brukernavn, name, gender, post, description)
                 })
                 .css({
-                    color: "#D88898"
+                    color: "#D88898",
+                    fontSize: "20px",
 
                 })
                 .appendTo(out)

@@ -22,6 +22,11 @@ img {
     height: 300px;
 } 
 
+#output {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 #container {
     min-height:100%;
     position:relative;
